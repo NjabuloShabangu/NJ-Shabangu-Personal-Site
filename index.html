@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>NJ's Personal Site</title>
+  <!--link to stylesheet-->
+  <link rel="stylesheet" href="styles.css" />
+  <!--Google Font Link-->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!--Bootstrap Link-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <!-- Navbar template from Bootstrap v5.0 -->
+  <nav class="navbar navbar-light bg-transparent">
+    <a class="navbar-brand mx-auto" href="#">
+      <div class="logo-image">
+        <!-- Used Adobe Logo Maker AI to create logo at the top of the page -->
+        <img src="images/NS-1.jpeg" class="NS-img" />
+        <!-- image after the breakpoint at 1000px grows to 15% of the width of the page -->
+      </div>
+    </a>
+  </nav>
+
+  <section class="title-section">
+    <div class="container">
+      <!-- Created box-like outline in the title section using Canva -->
+      <img src="images/background-shape.svg" class="background-shape"/>
+      <!-- Outline rotates 90 degrees at the 1000px width breakpoint -->
+      <div class="open-text-paragraph">
+        <h1 class="open-text hello">Hello. </h1>
+        <h1 class="open-text">I am NJ, a frontend developer. </h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <h1 class="content-header">Projects</h1>
+    <p class="content-text">
+      As a student frontend developer, I have developed a variety of projects using
+      HTML, CSS and Bootstrap. Below are a few highlights of my most recent projects.
+    </p>
+    <div class="row">
+      <!-- used Bootstrap to create breakpoint that displays 3 cards on medium to large screens, and 1 on a small screen -->
+      <div class="col-md-4">
+        <div class="card project-card" style="width: 22rem;">
+          <img src="images/Happy-Places.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Happy Places</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="https://njabuloshabangu.github.io/Happy-Places-Landing-Page/" class="btn btn-primary button">Visit Site</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card project-card" style="width: 22rem;">
+          <img src="images/Shabangu-Co.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Shabangu Co</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="https://njabuloshabangu.github.io/ShabanguCo/" class="btn btn-primary button">Visit Site</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card project-card" style="width: 22rem;">
+          <img src="images/The-Serenity.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">The Serenity</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="https://njabuloshabangu.github.io/SRNTY-BnB-Website/" class="btn btn-primary button">Visit Site</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section class="footer-section">
+    <h1 class="contact-me">Contact Me</h1>
+    <p class="short-text">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    </p>
+    <form class="contact-me-form">
+      <!-- used Bootstrap to add spacing between inputs ( mb-3 which is the same as style="margin-bottom: 3rem" ) -->
+      <div class="mb-3">
+        <input type="text" class="form-control" id="name" placeholder="Full Name">
+      </div>
+      <div class="mb-3">
+        <input type="email" class="form-control" id="email" placeholder="Email Address">
+        <div id="emailHelp" class="form-text">Please share your email and I will contact you promptly.</div>
+      </div>
+      <div>
+        <!-- used Bootstrap to create button ( btn btn-primary ) -->
+        <button type="submit" class="btn btn-primary button">Reach Out!</button>
+      </div>
+
+  </section>
+
+
+</body>
+
+</html>
